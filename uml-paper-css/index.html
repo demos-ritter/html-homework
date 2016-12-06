@@ -3,140 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>uml-paper</title>
+    <link href="./uml-paper.css" type="text/css" rel="stylesheet"/>
 </head>
-<body>
-
-<h2>统一建模语言理论测试</h2>
-
+<body class="uml-paper">
+<div align="center">
+    <h2>统一建模语言理论测试</h2>
+</div>
 <header>
-    <div>考试科目：统一建模语言</div>
-    <div>时间：100 分钟</div>
-    <div>得分：</div>
+    <div class="uml">
+        <div class="head float-left">考试科目：统一建模语言</div>
+        <div class="head float-left">时间：100 分钟</div>
+        <div class="head float-right">得分：</div>
+    </div>
 
-    <div>
-        <div>
+    <div class="uml">
+        <div class="head float-left">
             <label for="grade">班级（必填）：</label> <input id="grade" type="text" required/>
         </div>
-        <div>
+        <div class="head float-left">
             <label for="nubmer">学号（必填）：</label> <input id="nubmer" type="text" required/>
         </div>
-        <div>
+        <div class="head float-right">
             <label for="name">姓名（必填）：</label> <input id="name" type="text" required/>
         </div>
     </div>
 </header>
 
-<article>
-    <div>
-        <h4>一、填空题（每空5分，共20分）</h4>
-        <div>
+<article class="article">
+    <div class="border">
+        <div class="article-header">
+            <h4>一、填空题（每空5分，共20分）</h4>
+        </div>
+        <div class="article-question">
             <p>1. UML 的中文全称是：</p>
             <input type="text">
         </div>
-        <div>
+        <div class="article-question">
             <p>2. 对象最突出的特征是：</p>
+            <input type="text">
+            <input type="text">
             <input type="text">
         </div>
     </div>
 
-    <div>
-        <h4>二、选择题（每题10分，共20分）</h4>
+    <div class="border">
+        <div class="article-header">
+            <h4>二、选择题（每题10分，共20分）</h4>
+        </div>
         <div>
             <div>
-                1. UML 与软件工程的关系是：
-                <div>
+                <div class="article-question">
+                    <p>1. UML 与软件工程的关系是：</p>
+                </div>
+                <div class="article-answer">
                     <input name="number_1" type="radio">(A) UML 就是软件工程
                 </div>
-                <div>
+                <div class="article-answer">
                     <input name="number_1" type="radio">(B) UML 参与到软件工程中软件开发过程的几个阶段
                 </div>
-                <div>
+                <div class="article-answer">
                     <input name="number_1" type="radio">(C) UML 与软件工程无关
                 </div>
-                <div>
+                <div class="article-answer">
                     <input name="number_1" type="radio">(D) UML 是软件工程的一部分
                 </div>
 
             </div>
 
             <div>
-                2. Java 语言支持：
-                <div>
+                <div class="article-question">
+                    <p>2. Java 语言支持：</p>
+                </div>
+
+                <div class="article-answer">
                     <input name="number_2" type="radio">(A) 单继承
                 </div>
-                <div>
+                <div class="article-answer">
                     <input name="number_2" type="radio">(B) 多继承
                 </div>
-                <div>
+                <div class="article-answer">
                     <input name="number_2" type="radio">(C) 单继承和多继承都支持
                 </div>
-                <div>
+                <div class="article-answer">
                     <input name="number_2" type="radio">(D) 单继承和多继承都不支持
                 </div>
             </div>
         </div>
     </div>
 
-    <div>
-        <h4>三、多项选择题（每题10分，共20分）</h4>
+    <div class="border">
+        <div class="article-header">
+            <h4>三、多项选择题（每题10分，共20分）</h4>
+        </div>
         <div>
             <div>
-                1. 用例的粒度分为一下哪三种：
-                <div>
+                <div class="article-question">
+                    <p>1. 用例的粒度分为一下哪三种：</p>
+                </div>
+
+                <div class="article-answer">
                     <input type="radio">(A) 概述级
                 </div>
-                <div>
+                <div class="article-answer">
                     <input type="radio">(B) 需求级
                 </div>
-                <div>
+                <div class="article-answer">
                     <input type="radio">(C) 用户目标级
                 </div>
-                <div>
+                <div class="article-answer">
                     <input type="radio">(D) 子功能级
                 </div>
             </div>
 
             <div>
-                2. 类图由以下哪三部分组成：
-                <div>
+                <div class="article-question">
+                    <p>2. 类图由以下哪三部分组成：</p>
+                </div>
+
+                <div class="article-answer">
                     <input type="radio">(A) 名称（Name）
                 </div>
-                <div>
+                <div class="article-answer">
                     <input type="radio">(B) 属性（Atribute）
                 </div>
-                <div>
+                <div class="article-answer">
                     <input type="radio">(C) 操作（Operation）
                 </div>
-                <div>
+                <div class="article-answer">
                     <input type="radio">(D) 方法（Function）
                 </div>
             </div>
         </div>
     </div>
 
-    <div>
-        <h4>四、判断题（每题10分，共20分）</h4>
+    <div class="border">
+        <div class="article-header">
+            <h4>四、判断题（每题10分，共20分）</h4>
+        </div>
         <div>
-            <div>
-                1. 用例图只是用于和客户交流和沟通的，用于确定需求。
-                <input name="number_4_1" type="radio"><input name="number_4_1" type="radio">
+            <div class="question-four">
+                <span class="article-question">
+                   1. 用例图只是用于和客户交流和沟通的，用于确定需求。
+                </span>
+                <input name="number_4_1" type="radio">
+                <span class="green">&#10004</span>
+                <input name="number_4_1" type="radio">
+                <span class="red">&#10006</span>
             </div>
 
-            <div>
-                2. 在状态图中终止状态在一个状态图中允许有任意多个
-                <input name="number_4_2" type="radio"><input name="number_4_2" type="radio">
+            <div class="question-four">
+                <span class="article-question">
+                     2. 在状态图中终止状态在一个状态图中允许有任意多个
+                </span>
+                <input name="number_4_2" type="radio">
+                <span class="green">&#10004</span>
+                <input name="number_4_2" type="radio">
+                <span class="red">&#10006</span>
             </div>
         </div>
     </div>
 
-    <div>
-        <h4>五、简答题（每题20分，共20分）</h4>
+    <div class="border">
+        <div class="article-header">
+            <h4>五、简答题（每题20分，共20分）</h4>
+        </div>
         <div>
-            1. 简述什么是模型以及模型的表现形式？<textarea cols="20" rows="3">  </textarea>
+            <div class="article-question">
+                <p>1. 简述什么是模型以及模型的表现形式？</p>
+            </div>
+            <textarea cols="20" rows="5">  </textarea>
         </div>
     </div>
 
 </article>
+
+<div class="btn" align="center">
+    <button>计算分数</button>
+</div>
 
 </body>
 </html>
